@@ -111,6 +111,14 @@ img {
     animation-name: rotacion;
     animation-duration: 10s;
 }
+a:hover {
+    color: darkred;
+    font-size: larger;
+    
+}
+img:hover {
+    border-radius: 50%;
+}
 @media screen and (min-width: 360px) and (max-width: 920px) {
     .grid{
         display: grid;
@@ -142,5 +150,10 @@ img {
     }
     100%{
         color: orange;
+    }
+}
+@keyframes {
+    25%{
+
     }
 }
