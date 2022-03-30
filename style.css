@@ -31,8 +31,8 @@ body{
 .caja{
     background-color: white;
     border: 2px solid black;
-    height: 250px;
-    width: 200px;
+    height: 18rem;
+    width: 18rem;
     padding: 5px;
     margin: 5px 5px 3px;
     text-align: center;
@@ -58,33 +58,64 @@ li{
 }
 .container{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
 }
 
-.grid{
+.grid-index{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: repeat (4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 15vh 15vh 45vh 15vh 10vh;
     grid-gap: 1rem;
     grid-template-areas: 
-        ". header ."
-        "nav nav nav"
-        "main main main"
-        ". footer ."
+        "header nav nav ."
+        "main1 main1 main1 main1"
+        ". main2 main3 ."
+        "main4 main4 main4 main4"
+        ". footer footer ."
 }
 header{
     grid-area: header;
+   
+    
 }
 nav{
     grid-area: nav;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3rem;
+    
 }
-main{
-    grid-area: main;
+.main1{
+    grid-area: main1;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3rem;
+}
+.main2{
+    grid-area: main2;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3rem;
+}
+.main3{ 
+    grid-area: main3;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3rem;
+}
+.main4{
+    grid-area: main4;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3rem;
 }
 footer{
     grid-area: footer;
+    display: flex;
+    justify-content: center;
 }
 
 h1{
@@ -99,17 +130,10 @@ img {
     max-height: 100%;
 
 }
-.prueba{
-    width: 100px;
-    height: 100px;
-    background: red;
-    margin: 50px;
-    box-shadow: 1px 1px;
-    
-}
-.prueba:hover{
-    animation-name: rotacion;
-    animation-duration: 10s;
+.logo{
+    max-width: 130px;
+    max-height: 130px;
+    padding: 1rem;
 }
 a:hover {
     color: darkred;
@@ -122,12 +146,12 @@ img:hover {
 @media screen and (min-width: 360px) and (max-width: 920px) {
     .grid{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: repeat (4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 15vh 15vh 60vh 10vh;
         grid-gap: 1rem;
         grid-template-areas: 
-            "header header"
-            "nav nav"
+            ". header ."
+            "nav nav nav"
             "main main"
             "footer footer"  
         }
