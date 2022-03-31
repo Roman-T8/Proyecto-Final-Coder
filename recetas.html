@@ -8,11 +8,13 @@
     <title> Sitio Web </title>
 </head>
 
-<body class="grid">
+<body class="grid-inicio">
    <header> 
-    <a href="https://www.youtube.com/watch?v=Ih6jcKd7VwU&t=10s"> <img class="logo" src="images/Logo chef.png" alt="Logo de chef"></a>
-     </header>
-    <nav>
+       <div>
+       <img class="logo" src="images/Logo chef.png" alt="Logo de un chef">
+       </div>
+    </header>
+    <nav class="container">
         <ul>
             <li> <a href="index.html"> Inicio </a> </li>
             <li> <a href="recetas.html">Recetas</a> </li>
@@ -23,33 +25,20 @@
         </ul>
     </nav>
 
-   <main>
-       <div class="container">
-            <div class="caja"> <p>Procedimiento</p></div>
-            <div class="caja"> <p>Ingredientes</p>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">1</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label class="form-check-label" for="inlineCheckbox2">2</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
-                    <label class="form-check-label" for="inlineCheckbox3">3</label>
-                  </div>
-            </div>
-            <iframe class="caja" width="560" height="315" src="https://www.youtube.com/embed/_jOMIdietUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="caja"> 
-                <p>Mi lista</p>
-                <div class="vstack gap-2 col-md-5 mx-auto">
-                    <button type="button" class="btn btn-secondary">Guardar</button>
-                    <button type="button" class="btn btn-outline-secondary">Cancelar</button>
-                  </div>
-            </div>
+   <main class="main1r">
+       <div class="container caja">
+             <p>Ingredientes</p></div>
         </div>
-     </main>
+    </main>
+    <article class="main2r">
+        <div class="container caja"> <p>Procedimiento</p></div>
+    </article>
+    <aside class="main3r">
+        <iframe class="container caja" width="560" height="315" src="https://www.youtube.com/embed/_jOMIdietUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </aside>
+    <section class="main4r">
+        <div class="container caja"> <p>Mi lista</p></div>
+    </section>
    <footer>
        <p> Creado por Roman Traverso, estudiante de  <a href="https://www.coderhouse.com/">Coderhouse</a> </p>
    </footer>
