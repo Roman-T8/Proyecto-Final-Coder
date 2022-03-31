@@ -86,7 +86,7 @@ ul{
 .grid-inicio{
     display: grid;
     grid-auto-columns: repeat(4, 1fr);
-    grid-template-rows: 15vh 30vh 30vh 15vh;
+    grid-template-rows: 15vh 35vh 35vh 15vh;
     grid-gap: 1rem;
    
 }
