@@ -67,10 +67,8 @@ ul{
     height: 100%;
 }
 .caja{
-    background-color: white;
-    background-color: ;
-    height: 18rem;
-    width: 18rem;
+    background-color: aqua;
+    size: inherit;
     padding: 5px;
     margin: 5px;
     overflow: hidden;
@@ -85,7 +83,7 @@ ul{
 /*GRID*/
 .grid-inicio{
     display: grid;
-    grid-auto-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 15vh 35vh 35vh 15vh;
     grid-gap: 1rem;
    
@@ -95,7 +93,7 @@ ul{
 /*SECCIONES*/
 header{
     display: flex;
-    grid-area: 1/1/1/1;
+    grid-area: 1/1/1/2;
     align-items: center;
     justify-content: center;
 }
@@ -106,56 +104,62 @@ header .logo{
 }
 
 nav{
-    grid-area: 1/2/1/3;
+    grid-area: 1/2/1/4;
     background-color: brown;
 }
 .main1{
-    grid-area: 2/1/2/2;
+    grid-area: 2/1/2/3;
     display: flex;
     justify-content: space-evenly;
     padding: 1rem;
 }
 .main2{ 
-    grid-area: 2/3/3/4;
+    grid-area: 2/3/3/5;
     display: flex;
     justify-content: space-evenly;
     padding: 1rem;
 }
 .main3{
-    grid-area: 3/1/3/2;
+    grid-area: 3/1/3/3;
     display: flex;
     justify-content: space-evenly;
     padding: 1rem;
 }
 .main1r{
-    grid-area: 2/1/3/1;
+    grid-area: 2/1/3/2;
     display: flex;
     justify-content: space-evenly;
     padding: 1rem;
 }
 .main2r{
-    grid-area: 2/2/3/2;
+    grid-area: 2/2/3/3;
     display: flex;
     justify-content: space-evenly;
     padding: 1rem;
 }
 .main3r{
-    grid-area: 2/3/2/4;
+    grid-area: 2/3/2/5;
     display: flex;
     justify-content: space-evenly;
     padding: 1rem;
 }
 .main4r{
-    grid-area: 3/3/3/4;
+    grid-area: 3/3/3/5;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+.main5{
+    grid-area: 2/1/3/5;
     display: flex;
     justify-content: space-evenly;
     padding: 1rem;
 }
 footer{
-    grid-area: 4/2/4/3;
+    grid-area: 4/2/4/4;
     display: flex;
-    justify-content: center;
     padding: 2rem;
+    
 }
 
 img {
@@ -174,25 +178,27 @@ img:hover {
 @media screen and (min-width: 360px) and (max-width: 920px) {
     .grid{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 15vh 15vh 60vh 10vh;
         grid-gap: 1rem;
         grid-template-areas: 
-            ". header ."
-            "nav nav nav"
-            "main main"
+            "header nav"
+            "main1 main2"
+            "main3 main3"
             "footer footer"  
         }
+    .grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 15vh 15vh 60vh 10vh;
+            grid-gap: 1rem;
+            grid-template-areas: 
+                "header nav"
+                "main1r main2r"
+                "main3r main4r"
+                "footer footer"  
+                }
         }
-@keyframes rotacion {
-            50%{
-                transform:rotate(90deg)
-            }
-            100%{
-                transform:rotate(180deg)
-            }
-            
-}
 @keyframes cambio-color{
     25%{ 
         color: red;
