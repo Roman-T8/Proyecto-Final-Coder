@@ -51,7 +51,7 @@ img {
     height: 30%;
 }
 .fondo-pizza{
-    background-image: url(images/pizza-in-oven.jpg);
+    background-image: url(images/pizza.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -64,6 +64,14 @@ img {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    object-fit: cover;
+    background-attachment: fixed;
+}
+.fondo-tabla{
+    background-image: url(images/tabla.jpg);
+    background-position: top center;
+    background-size: 100%;
+    background-repeat: repeat-y;
     object-fit: cover;
     background-attachment: fixed;
 }
@@ -91,6 +99,19 @@ ul{
     margin: 0 auto;
     height: 100%;
 }
+.container-mundial{
+    display: flex;
+    justify-content: space-around;
+    flex-direction:row;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+    margin: 0 auto;
+    size: inherit;
+    border-radius: 10px;
+    border: 2px solid grey;
+    background-color: #6D0000;
+}
 .caja{
     size: inherit;
     padding: 5px;
@@ -103,6 +124,9 @@ ul{
     align-items: center;
     box-shadow: 2px 4px 15px 0 black;
 }
+.container-mundial .caja{
+    background-color: white;
+}
 
 
 /*GRID*/
@@ -112,7 +136,12 @@ ul{
     grid-template-rows: 15vh 50vh 20vh 15vh;
     grid-gap: 1rem;  
 }
-
+.grid-mundial{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1.5fr 0.5fr;
+    gap: 1rem;
+}
 
 /*SECCIONES*/
 header{
@@ -179,6 +208,30 @@ nav{
     justify-content: space-evenly;
     padding: 1rem;
 }
+main{
+    grid-area: 2/2/4/4;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+address{
+    grid-area: 1/1/2/2;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+aside{
+    grid-area: 1/2/3/3;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+section{
+    grid-area: 2/1/3/2;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
 footer{
     grid-area: 4/2/4/4;
     display: flex;
@@ -187,10 +240,6 @@ footer{
     
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
 
 /*ANIMACIONES Y RESPONSIVE*/
 a:hover{
@@ -210,25 +259,68 @@ header img:hover{
 }
 
 @media screen and (min-width: 360px) and (max-width: 920px) {
-    .grid{
+    .grid-inicio{
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 15vh 15vh 60vh 10vh;
-        grid-gap: 1rem;
-        grid-template-areas: 
-            "header nav"
-            "main1 main2"
-            "main3 main3"
-            "footer footer" }
-    .grid{
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-auto-rows: 15vh 15vh 60vh 10vh;
-                grid-gap: 1rem;
-                grid-template-areas: 
-                    "header nav"
-                    "main1r main2r"
-                    "main3r main4r"
-                    "footer footer" }
+        grid-auto-rows: 15vh 15vh 30vh 30vh 10vh;
+        grid-gap: 1rem; }
+    header{
+        grid-area: 1/1/3/2;
+        display: flex;
+        padding: 2rem;
+        justify-content: center;}
+    nav{
+        grid-area: 2/1/3/3;
+        display: flex;
+        padding: 2rem;
+        justify-content: center; }
+    .main1{
+        grid-area: 3/1/4/2;
+        display: flex;
+        padding: 2rem;
+        justify-content: center;
+    }
+    .main3{
+        grid-area: 3/2/4/3;
+        display: flex;
+        padding: 2rem;
+        justify-content: center;
+    }
+    .main2{
+        grid-area: 4/1/5/3;
+        display: flex;
+        padding: 2rem;
+        justify-content: center;
+    }
+    .main1r{
+        grid-area: 3/1/4/2;
+        display: flex;
+        padding: 2rem;
+        justify-content: center;
+    }
+    .main2r{
+        grid-area: 3/2/4/3;
+        display: flex;
+        padding: 2rem;
+        justify-content: center;
+    }
+    .main3r{
+        grid-area: 4/1/5/2;
+        display: flex;
+        padding: 2rem;
+        justify-content: center;
+    }
+    .main4r{
+        grid-area: 4/2/5/3;
+        display: flex;
+        padding: 2rem;
+        justify-content: center;
+    }
+    footer{
+        grid-area: 5/1/6/3;
+        display: flex;
+        padding: 2rem;
+        justify-content: center;
+    }
 
 @keyframes cambio-color{
     25%{ 
