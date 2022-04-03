@@ -252,7 +252,7 @@ a:hover{
     border-bottom: 2px solid red;
     font-size: larger;
 }
-header img:hover{
+header a:hover{
     box-shadow: 2px 4px 15px 0 #3f1a0a;
     border-bottom: none;
     border-radius: 50%;
