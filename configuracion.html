@@ -8,35 +8,43 @@
     <title> Sitio Web </title>
 </head> 
 
-<body class="grid-inicio">
+<body class="grid-inicio fondo-pizza">
    <header> 
-       <img class="logo" src="images/Logo chef.png" alt="Logo de un chef">
+    <a href="https://www.youtube.com/watch?v=Ih6jcKd7VwU"><img class="logo" src="images/Logo chef.png" alt="Logo de un chef">
     </header>
     <nav class="container">
         <ul>
-            <li> <a href="index.html"> Inicio </a> </li>
-            <li> <a href="recetas.html">Recetas</a> </li>
-            <li> <a href="mundial.html">Mundial</a> </li>
-            <li> <a href="configuracion.html">Configuracion</a> </li>
-            <li> <a href="ayuda.html">Ayuda</a> </li>
+            <li> <a class="a--blanco" href="index.html"> Inicio </a> </li>
+            <li> <a class="a--blanco" href="recetas.html">Recetas</a> </li>
+            <li> <a class="a--blanco" href="mundial.html">Mundial</a> </li>
+            <li> <a class="a--blanco" href="configuracion.html">Configuracion</a> </li>
+            <li> <a class="a--blanco" href="ayuda.html">Ayuda</a> </li>
            
         </ul>
     </nav>
    <main class="container main5">
-       <form action="">
-          <p>
-            <input type="text" name="nombre"  placeholder="Escribe tu nombre">
-          </p> 
-           <p> 
-            <input type="text" name="mail" id="" placeholder="Escribe tu mail">  
-           </p>
-           <p>
-            <input type="text" name="numero" id="" placeholder="Introduce tu numero">
-           </p>
-           <p>
-            <input type="submit" value="Enviar">   
-           </p>
+    <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Direccion email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Esta informacion nunca sera compartida.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">Cerrar sesion</button>
+      </form>
        </form>
+       <div class="card" style="width: 18rem;">
+        <img src="images/logo usuario.webp" class="card-img-top" alt="Foto del usuario">
+        <div class="card-body">
+          <h5 class="card-title">Nombre del usuario</h5>
+          <p class="card-text">Informacion del perfil del usuario</p>
+          <a href="#" class="btn btn-primary">Editar mi perfil</a>
+        </div>
+      </div>
+       
    </main>
    <footer class="container">
        <p> Creado por Roman Traverso, estudiante de  <a href="https://www.coderhouse.com/">Coderhouse</a> </p>
