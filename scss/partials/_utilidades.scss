@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+%flex{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 360px) and (max-width: 920px){
+    %flex-animaciones{
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+}
+}
+%imagen{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-attachment: fixed;
+}

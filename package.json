@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss \"npm run build-css\"",
+    "compile-sass": "node-sass scss/style.scss css/style.css --watch"
+    
   },
   "repository": {
     "type": "git",
