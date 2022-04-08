@@ -10,6 +10,9 @@ a{
     text-decoration: none;
     color: black;
 }
+.footer-mundial a{
+    color: white;
+}
 .a--blanco{
     color:white;
 }
@@ -26,6 +29,9 @@ p{
     animation-name: cambio-color;
     animation-duration: 10s;
     animation-iteration-count: 5;
+}
+.footer-mundial p{
+    color: white;
 }
 body{
     font-size: medium;
@@ -51,7 +57,7 @@ img {
     height: 30%;
 }
 .fondo-pizza{
-    background-image: url(images/pizza.jpg);
+    background-image: url(images/tabla.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -67,8 +73,8 @@ img {
     object-fit: cover;
     background-attachment: fixed;
 }
-.fondo-tabla{
-    background-image: url(images/tabla.jpg);
+.fondo-vino{
+    background-image: url(images/vino.webp);
     background-position: top center;
     background-size: 100%;
     background-repeat: repeat-y;
@@ -109,8 +115,8 @@ ul{
     margin: 0 auto;
     size: inherit;
     border-radius: 10px;
-    border: 2px solid grey;
-    background-color: #6D0000;
+    border: 2px solid white;
+    background-color: white;
 }
 .caja{
     size: inherit;
@@ -142,6 +148,12 @@ ul{
     grid-template-rows: 1.5fr 0.5fr;
     gap: 1rem;
 }
+.grid-mundial1{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 15vh 70vh 15vh;
+    gap: 1rem;
+}
 
 /*SECCIONES*/
 header{
@@ -155,10 +167,22 @@ header .logo{
     max-height: 130px;
     padding: 1rem;
 }
+.header-mundial{
+    display: flex;
+    grid-area: 1/1/2/3;
+    align-items: center;
+    justify-content: center;
+}
 
 nav{
     grid-area: 1/2/1/4;
     
+}
+.nav-mundial{
+    display: flex;
+    grid-area: 1/2/1/6;
+    align-items: center;
+    justify-content: center;
 }
 .main1{
     grid-area: 2/1/2/3;
@@ -209,7 +233,7 @@ nav{
     padding: 1rem;
 }
 main{
-    grid-area: 2/2/4/4;
+    grid-area: 2/2/3/6;
     display: flex;
     justify-content: space-evenly;
     padding: 1rem;
@@ -237,7 +261,12 @@ footer{
     display: flex;
     padding: 2rem;
     justify-content: center;
-    
+}
+.footer-mundial{
+    display: flex;
+    grid-area: 3/2/4/6;
+    align-items: center;
+    justify-content: center;
 }
 
 
