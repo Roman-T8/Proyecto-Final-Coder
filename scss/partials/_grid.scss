@@ -3,11 +3,17 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 15vh 50vh 20vh 15vh;
-    grid-gap: 1rem;  
+    gap: map-get($mapa, gap ) 
 }
 .grid-mundial{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 1.5fr 0.5fr;
-    gap: 1rem;
+    gap: map-get($mapa, gap);
+}
+.grid-mundial1{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 15vh 70vh 15vh;
+    gap: map-get($mapa, gap);
 }

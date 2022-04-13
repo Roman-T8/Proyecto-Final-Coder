@@ -16,10 +16,15 @@
     justify-content: center;
 }
 }
-%imagen{
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-attachment: fixed;
+@mixin mix-img ($position, $size, $repeat, $fit, $attachment) {
+    background-position: $position;
+    background-size: $size;
+    background-repeat: $repeat;
+    object-fit: $fit;
+    background-attachment: $attachment;
 }
+$mapa: (
+    display:flex,
+    gap:1rem,
+    margin: 0 auto,
+)

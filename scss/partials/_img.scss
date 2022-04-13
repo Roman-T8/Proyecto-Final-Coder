@@ -7,20 +7,6 @@ img {
     width: 30%;
     height: 30%;
 }
-.fondo-pizza{
-    background-image: url(images/pizza.jpg);
-    @extend %imagen;
-    
-}
-.fondo-marmol{
-    background-image: url(images/marmol.jpg);
-    @extend %imagen;
-}
-.fondo-tabla{
-    background-image: url(images/tabla.jpg);
-    background-position: top center;
-    background-size: 100%;
-    background-repeat: repeat-y;
-    object-fit: cover;
-    background-attachment: fixed;
+.img-header{
+    background-image:url(/images/fondocomida.jpg);
 }

@@ -14,21 +14,33 @@ header{
     border-radius: 50%;
   }
 }
+.header-mundial{
+  display: map-get($mapa, display);
+  grid-area: 1/1/2/3;
+  align-items: center;
+  justify-content: center;
+}
 
 nav{
   grid-area: 1/2/1/4;
   a{
     color:#6D0000;
+}}
+.nav-mundial{
+  display: map-get($mapa, display);
+  grid-area: 1/3/2/6;
+  align-items: center;
+  justify-content: center;
 }
-}
+
 .main1{
   grid-area: 2/1/2/3;
   @extend %flex;
 }
 .main2{ 
   grid-area: 2/3/4/5;
-  @extend %flex;
-}
+  @extend %flex;}
+
 .main3{
   grid-area: 3/1/3/3;
   @extend %flex;
@@ -52,8 +64,9 @@ nav{
 .main5{
   grid-area: 2/1/3/5;
   @extend %flex;
+}
 main{
-  grid-area: 2/2/4/4;
+  grid-area: 2/2/3/6;
   @extend %flex;
 }
 address{
@@ -74,4 +87,9 @@ footer{
   padding: 2rem;
   justify-content: center;
 }
-}
+
+.footer-mundial{
+  display: map-get($mapa, display);
+  grid-area: 3/2/4/6;
+  align-items: center;
+  justify-content: center;}
