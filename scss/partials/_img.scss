@@ -1,0 +1,57 @@
+/*IMAGENES*/
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cajitaimg{
+    width: 30%;
+    height: 30%;
+}
+
+.logo{
+        max-width: 100px;
+        max-height: 100px;
+        align-self: center;
+        justify-content: center;
+        right: 30%;
+    &:hover{
+        box-shadow: 2px 4px 15px 0 #3f1a0a;
+        border-radius: 50%;
+        scale: 2,2 ;
+        border-bottom: none;
+        ;
+      }
+}
+.fondo{
+    background-image: url(/images/marmol.jpg);
+    @include mix-img (center center, cover, no repeat, cover, fixed)
+}
+.restaurante{
+    border-radius: 5px;
+    @include mix-img (center center, cover, no repeat, cover, fixed)
+
+}
+.banner{
+    background-image: url(/images/fideos.jpg);
+    @include mix-img(center center, cover, no repeat, cover, fixed);
+    width: 100%;
+    z-index: 0;
+}
+.canal{
+    background-image: url(/images/joshua.jpg);
+    @include mix-img(center center, cover, no repeat, cover, scroll)
+}
+.comida1{
+    background-image: url(/images/masamadre.jpeg);
+    @include mix-img(center center, cover, no repeat, cover, scroll)
+}
+.fondo2{
+    background-image: url(/images/pasta.jpg);
+    @include mix-img(center center, cover, no repeat, cover, fixed)
+}
+.paises{
+    @include mix-img(center center, cover, no repeat, cover, fixed);
+    max-width: 50%;
+    max-height: 50%;
+}

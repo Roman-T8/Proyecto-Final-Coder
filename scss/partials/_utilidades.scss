@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$primarycolor:#093145;
+$secondarycolor: #3c6478;
+
+%flex{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 360px) and (max-width: 920px){
+    %flex-animaciones{
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+}
+}
+@mixin mix-img ($position, $size, $repeat, $fit, $attachment) {
+    background-position: $position;
+    background-size: $size;
+    background-repeat: $repeat;
+    object-fit: $fit;
+    background-attachment: $attachment;
+}
+$mapa: (
+    display:flex,
+    gap:1rem,
+    margin: 0 auto,
+)

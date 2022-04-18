@@ -1,0 +1,61 @@
+/*FLEXBOX*/
+.container{
+    display: map-get($mapa,display);
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    margin: map-get($mapa, margin);
+    height: 100%;
+}
+.container-nav{
+    display: map-get($mapa,display);
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    margin: map-get($mapa, margin);
+    height: 100%;
+}
+.container-mundial{
+    display: map-get($mapa,display);
+    justify-content: space-around;
+    flex-direction:row;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    margin: map-get($mapa, margin);
+    border-radius: 10px;
+    border: 2px solid grey;
+    background-color: $primarycolor;
+    .caja{
+        background-color: $primarycolor;
+        
+    }
+}
+.caja{
+    size: inherit;
+    padding: 5px;
+    margin: 3px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .columna{
+        flex-direction: column;
+        size: 3rem;
+    }
+    &--blanco{
+        background-color: white;
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .ayuda{
+        border: 2px solid white;
+        gap: map-get($mapa, gap);
+    }
+    }

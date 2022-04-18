@@ -1,0 +1,527 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main1, .main2, .main3, .main4, .nav-recetas, .main1r, .main2r, .main3r, .main4r, .main5r, .footer-recetas, .nav-c, .main1c, .main2c, .nav-ayuda, .main1a, .main2a, .main3a, .main4a, .main5a, main .footer-ayuda {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 360px) and (max-width: 920px) {
+  header, nav, .main1, .main3, .main2, .main1r, .main2r, .main3r, .main4r, footer {
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+  }
+}
+
+/*TEXTO*/
+p a {
+  text-decoration: none;
+  color: black;
+}
+
+p a:hover {
+  border-bottom: black;
+}
+
+li a {
+  text-decoration: none;
+  color: #430000;
+}
+
+li a:hover {
+  color: #3f1a0a;
+  border-bottom: 2px solid #3f1a0a;
+  font-size: larger;
+}
+
+li a.blanco {
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  color: white;
+  line-height: 1.2;
+}
+
+body {
+  font-size: medium;
+  font-weight: 300;
+  font-family: fantasy;
+  font-style: italic;
+  background-color: white;
+}
+
+h1 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+h3 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header p {
+  font-size: 35px;
+  color: white;
+}
+
+.texto-banner {
+  position: absolute;
+  top: 30%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+footer p {
+  color: black;
+}
+
+/*IMAGENES*/
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.cajitaimg {
+  width: 30%;
+  height: 30%;
+}
+
+.logo {
+  max-width: 100px;
+  max-height: 100px;
+  align-self: center;
+  justify-content: center;
+  right: 30%;
+}
+
+.logo :hover {
+  box-shadow: 2px 4px 15px 0 #3f1a0a;
+  border-radius: 50%;
+  scale: 2,2;
+  border-bottom: none;
+}
+
+.fondo {
+  background-image: url(/images/marmol.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no repeat;
+  object-fit: cover;
+  background-attachment: fixed;
+}
+
+.pan {
+  background-image: url(/images/pan.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no repeat;
+  object-fit: cover;
+  background-attachment: scroll;
+}
+
+.banner {
+  background-image: url(/images/fideos.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no repeat;
+  object-fit: cover;
+  background-attachment: fixed;
+  width: 100%;
+  z-index: 0;
+}
+
+.canal {
+  background-image: url(/images/joshua.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no repeat;
+  object-fit: cover;
+  background-attachment: scroll;
+}
+
+.comida {
+  background-image: url(/images/papas.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no repeat;
+  object-fit: cover;
+  background-attachment: scroll;
+}
+
+.comida1 {
+  background-image: url(/images/tomates.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no repeat;
+  object-fit: cover;
+  background-attachment: scroll;
+}
+
+/*LISTAS*/
+li {
+  display: inline;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.carousel-inner {
+  height: 150px;
+  width: 600px;
+}
+
+.carousel-slide {
+  height: 150px;
+  width: 600px;
+}
+
+/*FLEXBOX*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.container-nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.container-mundial {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 2px solid grey;
+  background-color: #093145;
+}
+
+.container-mundial .caja {
+  background-color: #093145;
+}
+
+.caja {
+  background-color: #093145;
+  size: inherit;
+  padding: 5px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.caja .columna {
+  flex-direction: column;
+}
+
+.caja .blanco {
+  background-color: white;
+  min-height: 80px;
+  min-width: 80px;
+}
+
+.caja.ayuda {
+  border: 4px solid white;
+  gap: 1rem;
+}
+
+/*GRID INDEX*/
+.grid-inicio {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px 400px 500px 500px 500px 100px;
+}
+
+header {
+  grid-area: 2/1/3/7;
+}
+
+nav {
+  grid-area: 1/2/2/4;
+}
+
+nav a {
+  color: #093145;
+}
+
+.main1 {
+  grid-area: 3/1/4/5;
+  background-color: #093145;
+}
+
+.main2 {
+  grid-area: 5/1/6/3;
+  background-color: #093145;
+}
+
+.main3 {
+  grid-area: 4/1/5/5;
+}
+
+.main4 {
+  grid-area: 5/3/6/5;
+}
+
+footer {
+  grid-area: 6/1/7/5;
+}
+
+/*GRID MUNDIAL*/
+.grid-mundial {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.grid-mundial1 {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 1.5fr 1.5fr 1.5fr 0.5fr;
+  grid-template-rows: 100px 700px 100px;
+  gap: 1rem;
+}
+
+.nav-mundial {
+  grid-area: 1/1/2/7;
+}
+
+main {
+  grid-area: 2/2/3/6;
+}
+
+.footer-mundial {
+  grid-area: 3/2/4/6;
+}
+
+address {
+  grid-area: 1/1/2/2;
+}
+
+aside {
+  grid-area: 1/2/3/3;
+}
+
+section {
+  grid-area: 2/1/3/2;
+}
+
+/*GRID RECETAS*/
+.grid-recetas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 200px 350px 150px 350px 100px;
+}
+
+.nav-recetas {
+  grid-area: 1/2/2/6;
+}
+
+.main1r {
+  grid-area: 4/1/6/4;
+  background-color: #3c6478;
+  border-top: 4px solid white;
+}
+
+.main2r {
+  grid-area: 4/4/6/7;
+  background-color: #3c6478;
+  border-top: 4px solid white;
+}
+
+.main3r {
+  grid-area: 2/3/4/5;
+  background-color: #093145;
+}
+
+.main4r {
+  grid-area: 2/1/4/3;
+}
+
+.main5r {
+  grid-area: 2/5/4/7;
+}
+
+.footer-recetas {
+  grid-area: 6/2/7/6;
+}
+
+/*GRID CONFIGURACION*/
+.grid-configuracion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 500px 100px;
+  gap: 1rem;
+}
+
+.nav-c {
+  grid-area: 1/1/2/2;
+}
+
+.main1c {
+  grid-area: 2/1/3/2;
+}
+
+.main2c {
+  grid-area: 1/2/4/3;
+  background-image: url(/images/fondopizza.jpg);
+  background-size: cover;
+  background-repeat: no repeat;
+  background-position: center center;
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+}
+
+.footer-c {
+  grid-area: 3/1/4/3;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0rem;
+}
+
+/*GRID AYUDA*/
+.grid-ayuda {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 200px 200px 200px 200px 100px;
+}
+
+.nav-ayuda {
+  grid-area: 1/2/2/6;
+}
+
+.main1a {
+  grid-area: 2/1/3/7;
+  background-color: #093145;
+}
+
+.main2a {
+  grid-area: 3/2/4/4;
+  background-color: #093145;
+}
+
+.main3a {
+  grid-area: 3/4/4/6;
+  background-color: #093145;
+}
+
+.main4a {
+  grid-area: 4/2/5/4;
+  background-color: #093145;
+}
+
+.main5a {
+  grid-area: 4/4/5/6;
+  background-color: #093145;
+}
+
+main .footer-ayuda {
+  grid-area: 6/1/7/7;
+}
+
+/*SECCIONES*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-mundial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-mundial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.footer-mundial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*ANIMACIONES Y RESPONSIVE*/
+@media screen and (min-width: 360px) and (max-width: 920px) {
+  .grid-inicio {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 15vh 15vh 30vh 30vh 10vh;
+    grid-gap: 1rem;
+  }
+  header {
+    grid-area: 1/1/3/2;
+  }
+  nav {
+    grid-area: 2/1/3/3;
+  }
+  .main1 {
+    grid-area: 3/1/4/2;
+  }
+  .main3 {
+    grid-area: 3/2/4/3;
+  }
+  .main2 {
+    grid-area: 4/1/5/3;
+  }
+  .main1r {
+    grid-area: 3/1/4/2;
+  }
+  .main2r {
+    grid-area: 3/2/4/3;
+  }
+  .main3r {
+    grid-area: 4/1/5/2;
+  }
+  .main4r {
+    grid-area: 4/2/5/3;
+  }
+  footer {
+    grid-area: 5/1/6/3;
+  }
+}

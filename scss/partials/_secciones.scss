@@ -1,0 +1,27 @@
+/*SECCIONES*/
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-mundial{
+  display: map-get($mapa, display);
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-mundial{
+  display: map-get($mapa, display);
+  align-items: center;
+  justify-content: center;
+}
+footer{
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.footer-mundial{
+  display: map-get($mapa, display);
+  align-items: center;
+  justify-content: center;}
