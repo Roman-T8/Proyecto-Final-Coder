@@ -9,6 +9,10 @@
     gap: 2rem;
     margin: map-get($mapa, margin);
     height: 100%;
+    &--ultrec{
+        padding: none;
+        gap: none;
+    }
 }
 .container-nav{
     display: map-get($mapa,display);

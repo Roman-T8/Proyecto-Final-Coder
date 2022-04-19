@@ -28,8 +28,9 @@ img {
     @include mix-img (center center, cover, no repeat, cover, fixed)
 }
 .restaurante{
+    background-image: url(/images/restaurant.jpg);
     border-radius: 5px;
-    @include mix-img (center center, cover, no repeat, cover, fixed)
+    @include mix-img (center center, cover, no repeat, cover, scroll)
 
 }
 .banner{

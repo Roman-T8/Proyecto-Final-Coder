@@ -5,6 +5,7 @@ p a{
     &:hover{
         border-bottom: black;}
 }
+
 li a{
     text-decoration: none;
     color: #430000;
@@ -43,8 +44,7 @@ h1{
 h3{
     color: white;
     display: flex;
-    justify-content: center;
-    align-items: center; 
+    right: 20%;
 }
 section p{
     font-size: 35px;
@@ -57,7 +57,7 @@ section p{
     transform: translate(-50%, -50%);
 }
 .texto-banner1{
-    position: absolute;
+    position:absolute;
     top: 30%;
     left: 15%;
     transform: translate(-50%, -50%);
@@ -72,7 +72,10 @@ header p{
 .boton p{
     color: $primarycolor;
 }
-.main6r h3{
-    justify-content: flex-start;
-
-}
+.categorias{
+    color: white;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    &:hover{
+        font-size: larger;
+}}
