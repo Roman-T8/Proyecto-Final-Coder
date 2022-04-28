@@ -1,44 +1,62 @@
 /*GRID INDEX*/
 .grid-inicio{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100px 400px 500px 500px 500px 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 8% 40% 15% 20% 8% 30% 30% 8%;
    
 }
 header{
     grid-area: 1/1/2/2;
+    @extend %flex;
 
 }
 .main5{
-  grid-area: 2/1/3/7;
+  grid-area: 2/1/3/5;
+  @extend %flex;
+
+  
 }
 nav{
     grid-area: 1/2/2/4;
+    @extend %flex;
+
     a{
-      color:$primarycolor;
-  }}
+      color:$primarycolor;}
+    }
 .main1{
     grid-area: 3/1/4/5;
-    @extend %flex;
     background-color: $primarycolor;
-    
-  }
-.main2{ 
-    grid-area: 5/1/6/3;
     @extend %flex;
-    background-color:$primarycolor;
+}
+.main2{ 
+  grid-area: 4/1/5/5;
+  @extend %flex;
+
     }
   
-/*Agregar Carrousel*/ .main3{
-    grid-area: 4/1/5/5;
+ .main3{
+    grid-area: 7/2/8/4;
+    border-top: 2px solid $primarycolor;
     @extend %flex;
+
   }
 .main4{
-  grid-area: 5/3/6/5;
+  grid-area: 6/2/7/4;
   @extend %flex;
+
+}
+
+.main7{
+  grid-area: 5/1/6/5;
+  border-top: 2px solid $primarycolor;
+  border-bottom: 2px solid $primarycolor;
+  @extend %flex;
+
 }
 footer{
-    grid-area: 6/1/7/5;
+    grid-area: 8/1/9/5;
+    background-color: $primarycolor;
+    @extend %flex;
   }
 
 /*GRID MUNDIAL*/
@@ -46,106 +64,105 @@ footer{
 .grid-mundial{
     display: grid;
     grid-template-columns: 0.5fr 1.5fr 1.5fr 1.5fr 1.5fr 0.5fr;
-    grid-template-rows: 100px 100px 500px 500px 500px 100px;
+    grid-template-rows: 100px 100px 500px 500px 400px 100px;
     
 }
-/*Arreglar hover del logo*/ .header-mundial{
+ .header-mundial{
   grid-area: 1/1/2/3;
+  @extend %flex;
+
 }
 .nav-mundial{
     grid-area: 1/2/2/6;
+    @extend %flex;
+
 
   }
 .mainm1{
     grid-area: 2/1/3/7;
-    background-color: $primarycolor;
     @extend %flex;
     border-bottom: 2px solid white;
   }
-.mainm2{
-  grid-area: 4/1/5/4;
-  background-color: $primarycolor;
-  @extend %flex;
-  border-top: 2px solid white;
-}
+
 
 .mainm3{
-  grid-area: 3/1/4/4;
+  grid-area: 3/2/4/6;
   @extend %flex;
-  background-color: $secondarycolor;
+}
 
-}
-.mainm4{
-  grid-area: 3/4/5/7;
-  background-color: $secondarycolor;
-}
-.mainm5{
-  grid-area: 5/1/6/5;
-  background-color: $secondarycolor;
-  border-right: 2px solid white;
+.mainm2{
+  grid-area: 4/1/5/7;
+  @extend %flex;
+  background-color: $primarycolor;
+  border-top: 2px solid white;
 }
 .mainm6{
-  grid-area: 5/5/6/7;
-  background-color: $secondarycolor;
-  
+  grid-area: 5/2/6/6;
+  @extend %flex;
 }
-
 .footer-mundial{
-  grid-area: 6/2/7/6;
+  grid-area: 6/1/7/7;
+  background-color: $primarycolor;
+  @extend %flex;
  }
 
 /*GRID RECETAS*/
 .grid-recetas{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 200px 500px 500px 300px 100px;
+    grid-template-rows: 100px 100px 100px 400px 400px 400px 400px 100px;
     
 }
 .header-recetas{
-    grid-area: 1/1/2/2;
+    grid-area: 1/3/2/5;
+    @extend %flex;
+
 }
 .nav-recetas{
-    grid-area: 1/2/2/6;
+    grid-area: 2/1/3/4;
+    @extend %flex;
+
    
 }
 .main1r{
-    grid-area: 4/1/5/4;
+    grid-area: 6/1/7/4;
     @extend %flex;
     background-color: $secondarycolor;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
   }
 .main2r{
-    grid-area: 4/4/5/7;
+    grid-area: 6/4/7/7;
     @extend %flex;
     background-color: $secondarycolor;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+    overflow: auto;
   }
 .main3r{
-    grid-area: 2/1/3/7;
+    grid-area: 2/4/3/7;
     @extend %flex;
-    background-color: $primarycolor;
     border-bottom: 4px solid white;
   }
 .main4r{
-    grid-area: 3/1/4/4;
+    grid-area: 4/1/5/7;
     @extend %flex;
-    background-color: $primarycolor;
+    
 }
 .main5r{
-    grid-area: 3/4/4/7;
+    grid-area: 7/1/8/7;
     @extend %flex;
     border-left: 2px solid white;
 }
-/*Agregar Carrousel*/ .main6r{
+.main6r{
   grid-area: 5/1/6/7;
+  @extend %flex;
+}
+.main7r{
+  grid-area: 3/1/4/7;
   @extend %flex;
   background-color: $primarycolor;
 }
 
 .footer-recetas{
-    grid-area: 6/2/7/6;
+    grid-area: 8/1/9/7;
+    background-color: $primarycolor;
     @extend %flex;
 }
 
@@ -153,14 +170,17 @@ footer{
 .grid-configuracion{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 500px 100px;
-    gap: map-get($mapa, gap);
+    grid-template-rows: 100px 700px 100px;
 }
 .header-c{
    grid-area: 1/1/2/2;
+   @extend %flex;
+
 }
 .nav-c{
-    grid-area: 1/2/2/4;   
+    grid-area: 1/2/2/6; 
+    @extend %flex;
+  
 }
 
 .main1c{
@@ -168,63 +188,68 @@ footer{
     @extend %flex;
   }
 .main2c{
-    grid-area: 1/4/4/7;
+    grid-area: 2/4/3/7;
     @extend %flex;
-    background-image: url(/images/pizza1.jpg);
-    background-size: cover;
-    background-repeat: no repeat;
-    background-position: center center;
+    border-radius: 100%;
+    margin: 1rem;
+    /*
+    animation-name: pizza;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;*/
 }
 .footer-c{
-    grid-area: 3/1/4/4;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0rem;
+    grid-area: 3/1/4/7;
+    @extend %flex;
 }
 /*GRID AYUDA*/
 .grid-ayuda{
   display: grid;
     grid-template-columns:0.5fr 0.5fr 2fr 2fr 0.5fr 0.5fr;
-    grid-template-rows: 100px 50px 200px 200px 200px 100px;
+    grid-template-rows: 100px 50px 200px 300px 300px 100px;
 
 }
 .header-ayuda{
   grid-area: 1/1/2/3;
+  @extend %flex;
+
 }
 .nav-ayuda{
   grid-area: 1/2/2/6;
+  @extend %flex;
+
 }
 .main1a{
-  grid-area: 3/2/4/6;
+  grid-area: 3/1/4/7;
   @extend %flex;
   background-color: $primarycolor;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  
 }
 .main2a{
   grid-area: 4/2/5/4;
   @extend %flex;
-  background-color: $primarycolor;
+  border-bottom: 2px solid $primarycolor;
+  border-right: 2px solid $primarycolor;
+  margin-top: 20px;
 }
 .main3a{
   grid-area: 4/4/5/6;
   @extend %flex;
-  background-color: $primarycolor;
+  border-bottom: 2px solid $primarycolor;
+  margin-top: 20px;
+
 }
 .main4a{
   grid-area: 5/2/6/4;
   @extend %flex;
-  background-color: $primarycolor;
-  border-bottom-left-radius: 5px;
+  border-right: 2px solid $primarycolor;
+  margin-bottom: 20px;
+
 }
 .main5a{
   grid-area: 5/4/6/6;
   @extend %flex;
-  background-color: $primarycolor;
-  border-bottom-right-radius: 5px;
+  margin-bottom: 20px;
+
 }
 .footer-ayuda{
   grid-area: 6/1/7/7;
-  @extend %flex;
-}
+  @extend %flex;}

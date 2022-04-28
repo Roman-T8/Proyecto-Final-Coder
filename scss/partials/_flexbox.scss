@@ -8,12 +8,11 @@
     padding: 2rem;
     gap: 2rem;
     margin: map-get($mapa, margin);
-    height: 100%;
-    &--ultrec{
-        padding: none;
-        gap: none;
+    position: relative;
+    &--col{
+        flex-direction: column;
     }
-}
+    }
 .container-nav{
     display: map-get($mapa,display);
     flex-wrap: wrap;
@@ -39,6 +38,41 @@
         
     }
 }
+.container-ext{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.container-int-1{
+    flex: 1;
+    padding: 30px;
+}
+.container-int-2{
+    flex: 1;
+    padding: 30px;
+}
+.container-carta{
+    display: flex;
+    justify-content: center;
+}
+.carta{
+    height: 6em;
+    width: 6em;
+    margin: 10px;
+    background-color: beige;
+    box-shadow: 0 0 15px $primarycolor;
+    border-radius: 5px;
+    padding: 0px;
+}
+.carta-imagen{
+    height: 100px;
+    margin-bottom: 10px;
+
+}
+
 .caja{
     size: inherit;
     padding: 5px;
@@ -54,12 +88,21 @@
         size: 3rem;
     }
     &--blanco{
-        background-color: white;
-        max-width: 200px;
-        max-height: 200px;
+        background-color: $primarycolor;
+        width: 170px;
+        height: 170px;
+        border-radius: 10%;
+        margin: 10px;
     }
     .ayuda{
         border: 2px solid white;
+        background-color: col;
         gap: map-get($mapa, gap);
     }
     }
+.container-slider{
+    margin: auto;
+    width: 800px;
+    padding: 30px;
+    position: relative;
+}
