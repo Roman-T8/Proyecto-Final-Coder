@@ -28,47 +28,47 @@ img {
       }
 }
 .fondo{
-    background-image: url(/images/marmol.jpg);
+    background-image: url(../images/marmol.jpg);
     @include mix-img (center center, cover, no repeat, cover, fixed)
 }
 .restaurante{
-    background-image: url(/images/brandi.jpg);
+    background-image: url(../images/brandi.jpg);
     border-radius: 5px;
     @include mix-img (center center, cover, no repeat, cover, scroll)
 
 }
 .banner{
-    background-image: url(/images/fideos.jpg);
+    background-image: url(../images/fideos.jpg);
     @include mix-img(center center, cover, no repeat, cover, fixed);
     width: 100%;
     z-index: 0;
 }
 .banner2{
-    background-image: url(/images/masa.jpg);
+    background-image: url(../images/masa.jpg);
     @include mix-img(center center, cover, no repeat, cover, fixed);
 }
 .pizza{
-    background-image: url(/images/pizza3.webp);
+    background-image: url(../images/pizza3.webp);
     @include mix-img(center center, cover, no repeat, cover, scroll)
 }
 .fondo2{
-    background-image: url(/images/pasta.jpg);
+    background-image: url(../images/pasta.jpg);
     @include mix-img(center center, cover, no repeat, cover, fixed)
 }
 .donas{
-    background-image: url(/images/donas.jpeg);
+    background-image: url(../images/donas.jpeg);
     @include mix-img(center center, cover, no repeat, cover, scroll)
 }
 .croissant{
-    background-image: url(/images/croissant.jpeg);
+    background-image: url(../images/croissant.jpeg);
     @include mix-img(center center, cover, no repeat, cover, scroll)
 }
 .tikka{
-    background-image: url(/images/tikka-masala.jpg);
+    background-image: url(../images/tikka-masala.jpg);
     @include mix-img(center center, cover, no repeat, cover, scroll)
 }
 .tacos{
-    background-image: url(/images/tacos.jpg);
+    background-image: url(../images/tacos.jpg);
     @include mix-img(center center, cover, no repeat, cover, scroll)
 }
 
@@ -78,11 +78,11 @@ img {
     height: 60%;
 }
 .rolls{
-    background-image: url(/images/rolls.jpg);
+    background-image: url(../images/rolls.jpg);
     @include mix-img(center center, cover, no repeat, cover, scroll);
 }
 .pizzero{
-    background-image: url(/images/pizzero.jpg);
+    background-image: url(../images/pizzero.jpg);
     @include mix-img(center center, cover, no repeat, cover, scroll);
 }
 .mapa{
