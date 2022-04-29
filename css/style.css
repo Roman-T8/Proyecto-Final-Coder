@@ -169,7 +169,7 @@ img {
     border-bottom: none; }
 
 .fondo {
-  background-image: url(/images/marmol.jpg);
+  background-image: url(../images/marmol.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no repeat;
@@ -177,7 +177,7 @@ img {
   background-attachment: fixed; }
 
 .restaurante {
-  background-image: url(/images/brandi.jpg);
+  background-image: url(../images/brandi.jpg);
   border-radius: 5px;
   background-position: center center;
   background-size: cover;
@@ -186,7 +186,7 @@ img {
   background-attachment: scroll; }
 
 .banner {
-  background-image: url(images/fideos.jpg);
+  background-image: url(../images/fideos.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no repeat;
@@ -196,7 +196,7 @@ img {
   z-index: 0; }
 
 .banner2 {
-  background-image: url(/images/masa.jpg);
+  background-image: url(../images/masa.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no repeat;
@@ -204,7 +204,7 @@ img {
   background-attachment: fixed; }
 
 .pizza {
-  background-image: url(/images/pizza3.webp);
+  background-image: url(../images/pizza3.webp);
   background-position: center center;
   background-size: cover;
   background-repeat: no repeat;
@@ -212,7 +212,7 @@ img {
   background-attachment: scroll; }
 
 .fondo2 {
-  background-image: url(/images/pasta.jpg);
+  background-image: url(../images/pasta.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no repeat;
@@ -220,7 +220,7 @@ img {
   background-attachment: fixed; }
 
 .donas {
-  background-image: url(/images/donas.jpeg);
+  background-image: url(../images/donas.jpeg);
   background-position: center center;
   background-size: cover;
   background-repeat: no repeat;
@@ -228,7 +228,7 @@ img {
   background-attachment: scroll; }
 
 .croissant {
-  background-image: url(/images/croissant.jpeg);
+  background-image: url(../images/croissant.jpeg);
   background-position: center center;
   background-size: cover;
   background-repeat: no repeat;
@@ -236,7 +236,7 @@ img {
   background-attachment: scroll; }
 
 .tikka {
-  background-image: url(/images/tikka-masala.jpg);
+  background-image: url(../images/tikka-masala.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no repeat;
@@ -244,7 +244,7 @@ img {
   background-attachment: scroll; }
 
 .tacos {
-  background-image: url(/images/tacos.jpg);
+  background-image: url(../images/tacos.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no repeat;
@@ -261,7 +261,7 @@ img {
   height: 60%; }
 
 .rolls {
-  background-image: url(/images/rolls.jpg);
+  background-image: url(../images/rolls.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no repeat;
@@ -269,7 +269,7 @@ img {
   background-attachment: scroll; }
 
 .pizzero {
-  background-image: url(/images/pizzero.jpg);
+  background-image: url(../images/pizzero.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no repeat;
