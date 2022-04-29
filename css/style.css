@@ -186,7 +186,7 @@ img {
   background-attachment: scroll; }
 
 .banner {
-  background-image: url(/images/fideos.jpg);
+  background-image: url(images/fideos.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no repeat;
