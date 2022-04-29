@@ -38,7 +38,7 @@ img {
 
 }
 .banner{
-    background-image: url(/images/fideos.jpg);
+    background-image: url(images/fideos.jpg);
     @include mix-img(center center, cover, no repeat, cover, fixed);
     width: 100%;
     z-index: 0;
