@@ -288,6 +288,10 @@ img {
     border-radius: 0px;
     box-shadow: none; }
 
+.container-int-2 img {
+  width: 18em;
+  height: 18em; }
+
 /*LISTAS*/
 li {
   display: inline;
@@ -695,7 +699,7 @@ footer {
   .grid-inicio {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 6% 18% 13% 10% 6% 20% 20% 8%; }
+    grid-template-rows: 6% 18% 13% 10% 6% 25% 25% 8%; }
   header {
     grid-area: 1/1/2/2; }
   nav {
